@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect 4 Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Name input area -->
+  <div id="nameInputArea">
+    <h1>CONNECT 4</h1>
+    <input type="text" id="player1" placeholder="Enter Player 1 Name">
+    <input type="text" id="player2" placeholder="Enter Player 2 Name">
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <!-- Game board and message -->
+  <div id="gameArea" style="display: none;">
+    <div id="gameBoard"></div>
+    <p id="message"></p>
+    <button id="restartBtn" style="display: none;">Restart Game</button>
+  </div>
+
+  <!-- Winner Screen -->
+  <div id="winnerScreen" style="display: none;">
+    <video id="winnerVideo" autoplay muted loop playsinline>
+      <source src="Winner.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1 id="winnerText"></h1>
+    <img src="Dance.gif" alt="Celebration" style="width:300px;height:auto;">
+    <button id="playAgainBtn">Play Again</button>
+</div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
